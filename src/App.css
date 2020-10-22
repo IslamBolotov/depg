@@ -1,0 +1,121 @@
+.App {
+  font-size: 20px;
+}
+
+
+
+
+
+.btn {
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 30px;
+  
+
+}
+
+
+.nav-bar .active{
+  text-decoration: underline;
+}
+
+
+.photo-block2 {
+  width: 100px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.footer{
+  display: flex;
+  color: #fff;
+  margin-top: 200px;
+  width: 100%;
+  background-color: rgb(92, 92, 158);
+  bottom: 0;
+}
+
+li{
+  list-style-type: none;
+}
+.footer > ul > li{
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+.footer-link-elements{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link-main{
+  width: 30%;
+  font-size: 20px;
+}
+
+.footer-link-main > div {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 250px;
+  background-color: black;
+  height: 2px;
+}
+
+.img-inst{
+  width: 50px;
+  margin-top: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-sets{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-basket{
+  margin-left: 400px;
+}
+.nav-basket-1{
+  border: none;
+  outline: none;
+  margin-left: 50px;
+}
+.MuiIconButton-root{
+  outline: none;
+}
+
+.listing{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 15px;
+}
+
+
+.photo-block {
+  width: 150px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  /* border: 2px solid #000; */
+}
+
+.home {
+
+text-align: center;
+}
+
+
+
+.table-basket{
+  margin: 25px auto auto 5%;
+  width: 60%;
+  justify-content: space-between;
+}
+
