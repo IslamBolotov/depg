@@ -2,12 +2,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css'
+import '../Navbar/Navbar.css'
 import Badge from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CollectionsBookmarkIcon from '@material-ui/icons/CollectionsBookmark';
 import { Tooltip } from '@material-ui/core';
+  
 
 const StyledBadge = withStyles((theme) => ({
   badge: {
@@ -29,8 +31,8 @@ class Navbar extends Component {
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="container">
-          <Link className="navbar-brand" to="/">ДЕПГ</Link>
+        <div className="container" style={{marginLeft:"50px"}}>
+          <Link className="navbar-brand" to="/"><div className="pppp"></div></Link>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav">
               <li className="nav-item active">
@@ -58,26 +60,25 @@ class Navbar extends Component {
                     </Link>
 
                     <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <Link className="dropdown-item" to="/all"> Все товары</Link>
-                      <Link className="dropdown-item" to="/proza"> Мясо, птица, рыба</Link>
-                      <Link className="dropdown-item" to="/priklyucheniya"> Напитки</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Хлеб, хлебобулочные изделия</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Бакалея</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Чай, кофе, какао, кисель</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Диетическая и диабетическая продукция</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Кондитерские изделия</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Кулинария</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Колбасы, сосиски, деликатесы</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Замороженные полуфабрикаты</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Молочные продукты, яйца</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Для детей</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Уборка, стирка</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Все для дома</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Все для пикника</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Автомобильные аксессуары</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Одежда и обувь</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Товары для спорта</Link>
-                      <Link className="dropdown-item" to="/poeziya"> Сувениры</Link>
+                      <Link className="dropdown-item" to="/meat"> Мясо, птица, рыба</Link>
+                      <Link className="dropdown-item" to="/drink"> Напитки</Link>
+                      <Link className="dropdown-item" to="/bread"> Хлеб, хлебобулочные изделия</Link>
+                      <Link className="dropdown-item" to="/bakalea"> Бакалея</Link>
+                      <Link className="dropdown-item" to="/tea"> Чай, кофе, какао, кисель</Link>
+                      <Link className="dropdown-item" to="/diet"> Диетическая и диабетическая продукция</Link>
+                      <Link className="dropdown-item" to="/confectionery"> Кондитерские изделия</Link>
+                      <Link className="dropdown-item" to="/cooking"> Кулинария</Link>
+                      <Link className="dropdown-item" to="/sausages"> Колбасы, сосиски, деликатесы</Link>
+                      <Link className="dropdown-item" to="/frozen"> Замороженные полуфабрикаты</Link>
+                      <Link className="dropdown-item" to="/milk"> Молочные продукты, яйца</Link>
+                      <Link className="dropdown-item" to="/forbaby"> Для детей</Link>
+                      <Link className="dropdown-item" to="/cleaning"> Уборка, стирка</Link>
+                      <Link className="dropdown-item" to="/forhome"> Все для дома</Link>
+                      <Link className="dropdown-item" to="/forpicknic"> Все для пикника</Link>
+                      <Link className="dropdown-item" to="/accessories"> Автомобильные аксессуары</Link>
+                      <Link className="dropdown-item" to="/clothes"> Одежда и обувь</Link>
+                      <Link className="dropdown-item" to="/sport"> Товары для спорта</Link>
+                      <Link className="dropdown-item" to="/souvenirs"> Сувениры</Link>
 
 
                     </div>
@@ -92,12 +93,13 @@ class Navbar extends Component {
                 </Tooltip>
               </li>
                 <li className=" nav-basket-1">
-              <Tooltip title="Корзина">
+              <Tooltip title="Корзина"><Link to="/basket"> 
                 <IconButton aria-label="cart" className="bbas">
                   <StyledBadge badgeContent={4} color="secondary">
                     <ShoppingCartIcon fontSize="large" />
                   </StyledBadge>
                 </IconButton>
+                </Link>
               </Tooltip>
               </li>
              

@@ -1,54 +1,48 @@
 import React from 'react';
 import Card from './Card';
-import axios from 'axios'
+import { Container, debounce, Typography } from '@material-ui/core';
+import { goToTop } from 'react-scrollable-anchor';
+import { connect } from 'react-redux';
+import { getListData } from '../../redux/actions/app-actions';
+import backPicture from '../images/1.png'
 
 
 class List extends React.Component{
-    state ={
-        data:[],
-    }
-
     componentDidMount(){
-        this.fetchContact();
-        console.log('didmount');
+        goToTop() 
+        this.props.getListData(this.props.catalog)
         
     }
-
-    componentDidUpdate(){
-        this.fetchContact();
-    }
-
-    componentWillUnmount(){
-        console.log('демонтирование');
-        
-    }
-
-    fetchContact = async () => {
-        
-        const { data } = await axios.get('http://localhost:8000/products')
-        if(JSON.stringify(this.state) === JSON.stringify({ data })) return;
-        this.setState({ data })
-    }
-
-    
-    
-
-  
 
     render(){
+        const { data, addToBasket, addToFavourities} = this.props
         return(
             <>
-                <ul className="listing">
-                    {this.state.data.map((product) => (
-                        <Card 
-                            key = {product.id}
-                            product = {product}
-                        />
-                    ))}
-                </ul>
+            <Container fixed style={{}}>
+                <Typography component="div"  style={{ backgroundColor: '#cfe8fc', height: 'auto',padding:'10px' }}>
+                    <ul className="listing">
+                        {data.map((product) =>
+                      
+                        (
+                            <Card 
+                                key = {product.id}
+                                product = {product}
+                            />
+                        ))}
+                    </ul>
+                </Typography>
+            </Container>
             </>
         )
     }
 }
 
-export default List;
+const mapStateToProps = (state) =>state.appReducer;
+
+const mapDispatchToProps = (dispatch) => ({
+    getListData: (catalog) =>dispatch(getListData(catalog)),
+    addToBasket: () =>{},
+    addToFavourities: () =>{}
+})
+
+export default connect(mapStateToProps,mapDispatchToProps)(List);

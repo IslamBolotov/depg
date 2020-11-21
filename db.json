@@ -1,88 +1,515 @@
 {
-  "products":[
+  "basket": [
     {
-      "id":0,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 38,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": true,
+      "quantity": 1
     },
     {
-      "id":1,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 26,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": true,
+      "quantity": 1
     },
     {
-      "id":2,
-      "name":"Шоколад",
-      "price":100,
-      "photo":"https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png"
+      "id": 16,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": true,
+      "quantity": 1
     },
     {
-      "id":3,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 27,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": true,
+      "quantity": 1
     },
     {
-      "id":4,
-      "name":"Шоколад",
-      "price":100,
-      "photo":"https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png"
+      "id": 15,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": true,
+      "quantity": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 0,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":5,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 1,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":6,
-      "name":"Шоколад",
-      "price":100,
-      "photo":"https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png"
+      "id": 2,
+      "name": "Шоколад",
+      "price": 100,
+      "photo": "https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":7,
-      "name":"Молоко",
-      "price":25,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 3,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":8,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 4,
+      "name": "Шоколад",
+      "price": 100,
+      "photo": "https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":9,
-      "name":"Шоколад",
-      "price":100,
-      "photo":"https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png"
+      "id": 5,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":10,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 6,
+      "name": "Шоколад",
+      "price": 100,
+      "photo": "https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":11,
-      "name":"Шоколад",
-      "price":100,
-      "photo":"https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png"
+      "id": 7,
+      "name": "Молоко",
+      "price": 25,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":12,
-      "name":"Мука",
-      "price":35,
-      "photo":"https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png"
+      "id": 8,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
     },
     {
-      "id":13,
-      "name":"Шоколад",
-      "price":100,
-      "photo":"https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png"
+      "id": 9,
+      "name": "Шоколад",
+      "price": 100,
+      "photo": "https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png",
+      "catalog": "",
+      "status": false
+    },
+    {
+      "id": 10,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
+    },
+    {
+      "id": 11,
+      "name": "Шоколад",
+      "price": 100,
+      "photo": "https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png",
+      "catalog": "",
+      "status": false
+    },
+    {
+      "id": 12,
+      "name": "Мука",
+      "price": 35,
+      "photo": "https://globus-online.kg/upload/iblock/a65/a6561b78631b3546940e8662e9406ddc.png",
+      "catalog": "",
+      "status": false
+    },
+    {
+      "id": 13,
+      "name": "Шоколад",
+      "price": 100,
+      "photo": "https://globus-online.kg/upload/iblock/6cb/6cb315c18dd85a09ed70ad1474077fe5.png",
+      "catalog": "",
+      "status": false
+    },
+    {
+      "id": 14,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 15,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": true
+    },
+    {
+      "id": 16,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": true
+    },
+    {
+      "id": 17,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 18,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 19,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 20,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 21,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 22,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 23,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 24,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://eda.ru/img/eda/464x302i/s1.eda.ru/StaticContent/Photos/120131082254/120328155736/p_O.jpg",
+      "catalog": "meat",
+      "status": false
+    },
+    {
+      "id": 25,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://instagram.ffru5-1.fna.fbcdn.net/v/t51.2885-15/e15/",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 26,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": true
+    },
+    {
+      "id": 27,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": true
+    },
+    {
+      "id": 28,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 29,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 30,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 31,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 32,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 33,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 34,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 35,
+      "name": "Кока-кола",
+      "price": 50,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEWF9AjUC0dDjC6v8cJZqAbHVnbgkwsMiBWg&usqp=CAU",
+      "catalog": "drink",
+      "status": false
+    },
+    {
+      "id": 36,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 37,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 38,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": true
+    },
+    {
+      "id": 39,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 40,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 41,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 42,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 43,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 44,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 45,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 46,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": false
+    },
+    {
+      "id": 47,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 48,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 49,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 50,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 51,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 52,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 53,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 54,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 55,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 56,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
+    },
+    {
+      "id": 57,
+      "name": "Сахар",
+      "price": 70,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-XJTMbydBRoWGGJBK4BerDsM-OHVjMZlPg&usqp=CAU",
+      "catalog": "bakalea",
+      "status": false
     }
   ]
 }

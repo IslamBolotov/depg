@@ -2,29 +2,34 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import "../Navbar/Navbar.css"
-import { AccountCircle } from '@material-ui/icons';
+import { AccountCircle, FilterNone } from '@material-ui/icons';
+import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { green } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2),
-    
+    marginLeft: theme.spacing(10),
+    marginRight: theme.spacing(5),
   },
   searchButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(70),
     marginLeft: theme.spacing(2),
     fontSize:'15px',
     borderRadius:'5px',
     padding:'8px',
-    backgroundColor:'green'
+    backgroundColor:'rgb(128,84,47)',
+    '&:hover':{
+      backgroundColor:'rgb(128,84,47)'
+    }
   },
   title: {
     flexGrow: 1,
@@ -50,7 +55,8 @@ const useStyles = makeStyles((theme) => ({
   account:{
     position:"absolute",
     marginRight:"0px",
-    marginLeft:'90%'
+    marginLeft:'80%',
+    border:"none"
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -71,10 +77,7 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('sm')]: {
-      width: '12ch',
-      '&:focus': {
-        width: '20ch',
-      },
+      width: '25ch',
     },
   },
 }));
@@ -84,8 +87,8 @@ export default function DenseAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div  className={classes.root}>
+      <AppBar style={{backgroundColor:" rgb(77, 161, 21)"}} position="static">
         <Toolbar>
           <IconButton
             edge="start"
@@ -108,7 +111,7 @@ export default function DenseAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div>
-          <IconButton
+          <IconButton 
             edge="start"
             className={classes.searchButton}
             color="inherit"
@@ -117,16 +120,14 @@ export default function DenseAppBar() {
             Искать
             {/* <SearchIcon /> */}
           </IconButton>
-            <IconButton
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  className={classes.account}
-                  color="inherit"
-                >
-                  <AccountCircle  />
-            </IconButton>
-            {/* <Button className="btn-search">Искать</Button> */}
+            
+                <div style={{display:"flex"}}>
+                  {/* <AccountCircle  style={{fontSize:'35px'}}/> */}
+                  <Link to='/signin'>Вход </Link>
+                  <h5>&nbsp;/&nbsp;</h5>
+                  <Link to="signup">Регистрация</Link>
+                </div>
+           
             
         </Toolbar>
       </AppBar>

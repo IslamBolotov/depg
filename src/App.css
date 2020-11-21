@@ -35,7 +35,8 @@
   color: #fff;
   margin-top: 200px;
   width: 100%;
-  background-color: rgb(92, 92, 158);
+  background-color: rgb(77, 161, 21);
+
   bottom: 0;
 }
 
@@ -79,7 +80,7 @@ li{
 }
 
 .nav-basket{
-  margin-left: 400px;
+  margin-left: 220px;
 }
 .nav-basket-1{
   border: none;
@@ -93,13 +94,13 @@ li{
 .listing{
   justify-content: center;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 15px;
 }
 
 
 .photo-block {
-  width: 150px;
+  width: 200px;
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -119,3 +120,22 @@ text-align: center;
   justify-content: space-between;
 }
 
+
+
+.paper:hover{
+  transition: ease-in-out 0.5s;
+  box-shadow:  0px 0px 5px 7px rgb(158, 151, 151);
+}
+
+.home{
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-text{
+  font-weight: 1000;
+  font-size: 45px;
+  margin-left: 300px;
+}

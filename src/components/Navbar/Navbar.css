@@ -8,6 +8,18 @@ a {
   
 }
 
-.btn-search{
-  background-color: antiquewhite;
+.btn{
+  background-color: rgb(77, 161, 21);
+  color: white;
+  font-weight: 520;
+}
+
+
+
+.pppp{
+  background-image: url('../images/7.png');
+  width: 290px;
+  height: 71px;
+  background-size: cover;
+  border-radius: 10px;
 }
