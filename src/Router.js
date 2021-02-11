@@ -18,7 +18,8 @@ const Router = () =>{
       <SimpleContainer />
 
       <Route exact  path="/" component = {Home}/>
-      <Route path="/product/:id" component={ProductDetails} />
+      <Route   path="/product/:id" component={ProductDetails} />
+      <Route   path="/login" component= {()=><Modal status={true}/>} />
       <Route   path="/basket" component= {Basket} />
       <Route   path="/signin" component= {Modal} />
       <Route   path="/meat" component = {()=><List catalog={'meat'}/>} />

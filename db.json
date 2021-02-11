@@ -1,4 +1,12 @@
 {
+  "user": [
+    {
+      "id": 1,
+      "login": "islambolotov",
+      "password": "islam",
+      "email": "islambolotov99@gmail.com"
+    }
+  ],
   "basket": [
     {
       "id": 38,
@@ -38,6 +46,33 @@
     },
     {
       "id": 15,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
+      "catalog": "meat",
+      "status": true,
+      "quantity": 1
+    },
+    {
+      "id": 24,
+      "name": "Мясо",
+      "price": 350,
+      "photo": "https://eda.ru/img/eda/464x302i/s1.eda.ru/StaticContent/Photos/120131082254/120328155736/p_O.jpg",
+      "catalog": "meat",
+      "status": true,
+      "quantity": 1
+    },
+    {
+      "id": 37,
+      "name": "Хлеб",
+      "price": 20,
+      "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
+      "catalog": "bread",
+      "status": true,
+      "quantity": 1
+    },
+    {
+      "id": 14,
       "name": "Мясо",
       "price": 350,
       "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
@@ -165,7 +200,7 @@
       "price": 350,
       "photo": "https://salat-olive.ru/wp-content/uploads/2019/04/myaso-dlya-olive-810x540.jpg",
       "catalog": "meat",
-      "status": false
+      "status": true
     },
     {
       "id": 15,
@@ -245,7 +280,7 @@
       "price": 350,
       "photo": "https://eda.ru/img/eda/464x302i/s1.eda.ru/StaticContent/Photos/120131082254/120328155736/p_O.jpg",
       "catalog": "meat",
-      "status": false
+      "status": true
     },
     {
       "id": 25,
@@ -349,7 +384,7 @@
       "price": 20,
       "photo": "https://chudo-povar.com/images/domashnij-xleb-v-duxovke.jpg",
       "catalog": "bread",
-      "status": false
+      "status": true
     },
     {
       "id": 38,

@@ -6,7 +6,11 @@ import { getUserData } from '../../redux/actions/app-actions';
 
 
 const LoginForm = (props) => {
+
+ // console.log(props);
+
     return (
+      <>
         <form onSubmit={props.handleSubmit} >
           <div>
           <Field className="login-input input" placeholder={"login"} name="login" component={"input"}/>
@@ -18,9 +22,11 @@ const LoginForm = (props) => {
           <Field  type={"checkbox"} name="rememberMe" component={"input"}/>remember me
           </div>
           <div>
-            <button >Login</button>
+          <button >Login</button>
           </div>
         </form>
+         
+      </>
     );
 }
 
@@ -47,9 +53,10 @@ class  Login extends React.Component {
   
 }
 
+const mapStateToProps = (state) =>state.appReducer; 
 
 const mapDispatchToProps = (dispatch) =>({
   getUserData: (data) => dispatch(getUserData(data))
 })
 
-export default connect(null,mapDispatchToProps)(Login);
+export default connect(mapStateToProps,mapDispatchToProps)(Login);

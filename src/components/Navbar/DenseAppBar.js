@@ -11,6 +11,7 @@ import { AccountCircle, FilterNone } from '@material-ui/icons';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { green } from '@material-ui/core/colors';
+import Modal from '../Modal/Modal';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -83,8 +84,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
+
 export default function DenseAppBar() {
   const classes = useStyles();
+
+  const ppp = () =>{
+    return (()=>
+    <Modal />
+    )
+  }
 
   return (
     <div  className={classes.root}>
@@ -123,12 +131,14 @@ export default function DenseAppBar() {
             
                 <div style={{display:"flex"}}>
                   {/* <AccountCircle  style={{fontSize:'35px'}}/> */}
-                  <Link to='/signin'>Вход </Link>
-                  <h5>&nbsp;/&nbsp;</h5>
-                  <Link to="signup">Регистрация</Link>
+                 
+                  
+               
+                  
+                  <Link to="">Регистрация</Link>
                 </div>
-           
-            
+                <h5>&nbsp;/&nbsp;</h5>
+                <Link to='/login'>Вход</Link>
         </Toolbar>
       </AppBar>
     </div>
